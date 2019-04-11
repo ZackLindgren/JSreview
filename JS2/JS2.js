@@ -12,5 +12,9 @@ for (let i = 1; i <= 100; i++)
     {
         console.log("Haw!");
     }
+    else
+    {
+        console.log(i);
+    }
 }
 
