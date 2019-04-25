@@ -39,8 +39,20 @@ const arrayConverter = function(arr)
     };
 };
 
+const printObject = function(obj)
+{
+    var output = "";
+
+    for (let key in obj)
+    {
+        output += key + ": " + obj[key] + "<br>";
+    }
+
+    document.getElementById("output").innerHTML = output;
+};
+
 // creating a test array
 let testArray = [1, "Hello", 0, false, "World", true];
 let testObject = arrayConverter(testArray);
 
-console.log(testObject);
+printObject(testObject);
